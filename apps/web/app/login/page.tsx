@@ -19,15 +19,15 @@ export default async function LoginPage({
   if (data?.claims?.sub) redirect(next);
   return <main className="auth-page">
     <section className="auth-card">
-      <Link href="/market-data" className="auth-wordmark">F<span>.</span> FigSuite<sup>™</sup></Link>
+      <Link href="/" className="auth-wordmark">F<span>.</span> FigSuite<sup>™</sup></Link>
       <div className="auth-eyebrow">SECURE ACCESS / FINANCE INTELLIGENCE</div>
-      <h1>Sign in to your <span>workspace.</span></h1>
-      <p className="auth-lead">Get a one-time sign-in code or secure link by email. No password required.</p>
+      <h1>Sign up or <span>log in.</span></h1>
+      <p className="auth-lead">Explore FigSuite freely. Use a one-time email code or secure link when you are ready to record a forecast, save scenarios or simulate an allocation. No password required.</p>
       <LoginForm destination={next} initialError={params.error === 'auth' ? 'Verification failed. Please request a new code.' : undefined}
         signedOut={params.logged_out === '1'}/>
       <div className="auth-footer">
         <span>Forecasts and simulation units have no cash value.</span>
-        <Link href="/market-data">Explore market references →</Link>
+        <Link href="/">Continue browsing without an account →</Link><Link href="/market-data">View market references →</Link>
       </div>
     </section>
   </main>;
