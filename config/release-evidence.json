@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "note": "No check is accepted without evidence of verification. Do not set verified=true solely because code merged.",
+  "gates": {
+    "finance_mvp": {
+      "checks": {
+        "FIN-01": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-02": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-03": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-04": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-05": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-06": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-07": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-08": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-09": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-10": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-11": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-12": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "FIN-13": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        }
+      },
+      "approvals": {
+        "product_owner": {
+          "approved": false,
+          "actor": null,
+          "evidenceUrl": null,
+          "approvedAt": null
+        },
+        "security_reviewer": {
+          "approved": false,
+          "actor": null,
+          "evidenceUrl": null,
+          "approvedAt": null
+        }
+      }
+    },
+    "cash_prizes": {
+      "checks": {
+        "CASH-01": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-02": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-03": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-04": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-05": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-06": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-07": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-08": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-09": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-10": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-11": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        },
+        "CASH-12": {
+          "verified": false,
+          "evidenceUrl": null,
+          "verifiedBy": null,
+          "verifiedAt": null
+        }
+      },
+      "approvals": {
+        "product_owner": {
+          "approved": false,
+          "actor": null,
+          "evidenceUrl": null,
+          "approvedAt": null
+        },
+        "legal_reviewer": {
+          "approved": false,
+          "actor": null,
+          "evidenceUrl": null,
+          "approvedAt": null
+        },
+        "finance_reviewer": {
+          "approved": false,
+          "actor": null,
+          "evidenceUrl": null,
+          "approvedAt": null
+        },
+        "security_reviewer": {
+          "approved": false,
+          "actor": null,
+          "evidenceUrl": null,
+          "approvedAt": null
+        }
+      }
+    }
+  }
+}
