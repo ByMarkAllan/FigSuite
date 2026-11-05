@@ -1,0 +1,28 @@
+flowchart TB
+  USERS[Analysts, Guilds, Spectators] --> UI[FigSuite Terminal / Next.js]
+  OPS[Market and Compliance Operators] --> ADMIN[Restricted Admin Portal]
+  UI --> API[Authenticated API / BFF]
+  ADMIN --> API
+  API --> IAM[Supabase Auth / RBAC / RLS]
+  API --> CORE[Events + Forecasts + Simulations]
+  API --> SOCIAL[Guilds / Chat / Gas]
+  CORE --> PG[(Postgres Transaction Ledger)]
+  SOCIAL --> PG
+  CORE --> REDIS[(Redis Cache / Rate Control)]
+  PG --> OUTBOX[Transactional Outbox]
+  OUTBOX --> RT[Internal Realtime Stream]
+  RT --> UI
+  EXTERNAL[Licensed Financial / Sports / Official Feeds] --> ADAPTERS[Vertical Data Adapters]
+  ADAPTERS --> EVIDENCE[Observations + Source Provenance]
+  EVIDENCE --> PG
+  WORKERS[Durable Event Workers] --> ENGINE[Resolution and Scoring]
+  ENGINE --> PG
+  API --> BILLING[Approved SaaS-only Billing]
+  CORE -. no transfer or entitlement mapping .-> BLOCK[No Payment-to-Prize Bridge]
+  COMPLIANCE[Independent Counsel + Provider + Executive Review] --> PRIZE[Isolated Prize Control Plane]
+  PRIZE --> DENY[DEFAULT DENY - No Credentials or Egress]
+  DENY -. future gate only .-> PAYOUT[Approved Payout Provider]
+  classDef safe fill:#e8f3ff,stroke:#1173D4,color:#17212e;
+  classDef risk fill:#fff1e9,stroke:#d97706,color:#17212e;
+  class API,CORE,PG,ENGINE safe;
+  class PRIZE,DENY,PAYOUT risk;

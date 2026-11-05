@@ -1,0 +1,38 @@
+name: Configure FigSuite MVP Project v2
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type SETUP to create/reuse the user Project and link FGS-001...FGS-036'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  project:
+    if: github.repository == 'ByMarkAllan/FigSuite' && inputs.confirm == 'SETUP'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout approved main branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Validate Project token is configured
+        env:
+          GH_TOKEN: ${{ secrets.PROJECTS_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Repository secret PROJECTS_TOKEN missing. Use a token owned by ByMarkAllan with project scope, never print it in logs."
+            exit 1
+          fi
+          gh auth status
+      - name: Dry run MVP backlog
+        run: python3 scripts/sync_mvp_project.py
+      - name: Create or reuse Project, labels and link all 36 existing Issues
+        env:
+          GH_TOKEN: ${{ secrets.PROJECTS_TOKEN }}
+        run: python3 scripts/sync_mvp_project.py --apply
