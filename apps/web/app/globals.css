@@ -17,3 +17,29 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms!important}}
 .workspace-context{display:flex;align-items:center;gap:13px;border:1px solid #27456d;background:linear-gradient(115deg,#132b4c,#111b2d);border-radius:11px;padding:13px 16px;margin-bottom:16px}.workspace-context-icon{flex-shrink:0;width:35px;height:35px;border-radius:9px;background:#254473;display:grid;place-items:center;color:#87b6ff}.workspace-context>div:nth-child(2){flex:1}.workspace-context strong{font-size:12px}.workspace-context p{margin:5px 0 0;font-size:10px;line-height:1.5;color:#93a7c2}.workspace-context-tag{font-size:8px;font-weight:800;white-space:nowrap;letter-spacing:1px;color:#8baded;border:1px solid #416192;border-radius:4px;padding:5px 7px}
 @media(max-width:650px){.workspace-context{padding:12px}.workspace-context-tag{display:none}}
+
+
+/* FigSuite identity: passwordless access and account settings */
+.auth-page{min-height:100vh;display:grid;place-items:center;padding:48px 20px;background:radial-gradient(circle at 75% 18%,#152f41 0,transparent 37%),radial-gradient(circle at 15% 80%,#10274b 0,transparent 45%),#080e19;color:#eaf3ff}
+.auth-card{width:min(100%,490px);padding:42px;background:#101a2c;border:1px solid #324058;border-radius:19px;box-shadow:0 28px 90px #0007;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.auth-wordmark{display:inline-flex;gap:5px;align-items:baseline;font-size:26px;font-weight:820;letter-spacing:-1.2px;color:#fff}
+.auth-wordmark span{color:#34d3a8}.auth-wordmark sup{font-size:9px;letter-spacing:0;vertical-align:top}
+.auth-eyebrow{margin-top:55px;color:#36d4aa;font-weight:760;letter-spacing:1.9px;font-size:10px}
+.auth-card h1{font-size:clamp(34px,5.5vw,48px);font-weight:780;letter-spacing:-2px;line-height:1.07;margin:16px 0 18px}
+.auth-card h1 span{color:#8aa9ff}.auth-lead{color:#a0b0c7;line-height:1.75;font-size:14px;margin:0 0 28px}
+.auth-form label{display:block;font-size:12px;font-weight:650;color:#d0dced;margin:0 0 9px}
+.auth-form input{width:100%;background:#0c1422;border:1px solid #3b4b63;border-radius:9px;min-height:48px;padding:12px 14px;font-size:15px;color:#f1f7ff}
+.auth-form input:focus{outline:2px solid #2bb997;outline-offset:2px}
+.auth-form button{width:100%;display:flex;justify-content:space-between;align-items:center;background:#39d5af;color:#041b1b;font-weight:760;border:0;border-radius:9px;padding:13px 16px;margin-top:14px;min-height:48px}
+.auth-form button:hover:not(:disabled){background:#86f1d5}.auth-verify{padding-top:23px;margin-top:22px;border-top:1px solid #34435a}
+.auth-verify p,.auth-policy{color:#889bb5;font-size:12px;line-height:1.65}.auth-policy{margin-top:21px}
+.auth-notice,.auth-error{border-radius:8px;padding:12px 13px;margin-top:16px;font-size:13px;line-height:1.5}
+.auth-notice{background:#11342b;border:1px solid #2d7658;color:#a4f3da}.auth-error{background:#362028;border:1px solid #914359;color:#ffd3dd}
+.auth-footer{border-top:1px solid #2c3950;display:flex;flex-direction:column;gap:6px;margin-top:28px;padding-top:20px;font-size:11px;color:#8598b1}
+.auth-footer a{color:#74a8ff;font-weight:700}.auth-footer a:hover{text-decoration:underline}
+.account-card{width:min(100%,570px)}.account-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}.account-nav>a:nth-child(2){color:#92afda;font-size:12px}
+.account-field{padding:16px;background:#0c1422;border:1px solid #2d3e57;border-radius:9px;margin-bottom:28px;display:flex;flex-direction:column;gap:6px}
+.account-field small{color:#899cb4;font-size:10px;font-weight:700;letter-spacing:1.3px}.account-field strong{font-size:14px;overflow-wrap:anywhere}
+.account-info{font-size:12px;line-height:1.65;color:#92a6bd;padding:20px 0;margin-top:26px;border-top:1px solid #2c3950}
+.account-signout{background:#2a1c2a;border:1px solid #6b3c4b;border-radius:8px;color:#ffd9e3;padding:11px 16px;font-weight:700;min-height:44px}
+@media(max-width:520px){.auth-card{padding:30px 22px}.auth-eyebrow{margin-top:35px}}
