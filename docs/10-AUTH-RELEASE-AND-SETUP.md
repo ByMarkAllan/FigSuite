@@ -6,7 +6,7 @@ Authentication is implemented in the FigSuite platform via Supabase Auth and Nex
 - Sign up / sign in using email one-time password or sign-in link.
 - Email confirmation via verifyOtp; redirect callback supports PKCE code exchange.
 - Persistent sessions with Next.js 16 proxy token refresh and secure server-side getClaims/getUser checks.
-- Forecasting terminal at / requires sign-in. /account requires sign-in; the marketing site and /market-data remain public.
+- Forecasting terminal at / is optionally gated by FIGSUITE_AUTH_REQUIRED=true; /account always requires a verified session. During email/redirect setup, the existing simulation remains available as a guest demo. Marketing and /market-data remain public.
 - User profile can be viewed and updated, subject to owner-only RLS in public.profiles.
 - Sign out via server action. No server-side service role credentials in the app.
 
@@ -33,7 +33,7 @@ Use the canonical Vercel project fig-suite for app.figsuite.com, root apps/web, 
 
 
 ## Acceptance test script (manual email delivery)
-1. Visit / in a fresh private browser. It must redirect to /login.
+1. With FIGSUITE_AUTH_REQUIRED=false, visit / in a private browser; the guest demo remains accessible. Directly visit /account and confirm it redirects to /login. After all checks pass, set FIGSUITE_AUTH_REQUIRED=true and redeploy; then / must redirect to /login.
 2. Request a code using a controlled test email address. Verify delivery from the configured SMTP sender.
 3. Enter the OTP (or use the token-hash magic link). Confirm the workspace becomes accessible.
 4. Go to /account, save a display name, refresh and confirm the value persists.
@@ -43,3 +43,6 @@ Use the canonical Vercel project fig-suite for app.figsuite.com, root apps/web, 
 8. Confirm /market-data stays accessible without a session and /api/prizes/status remains payout-disabled.
 
 Do not complete launch without this check. The connected Supabase management integration does not expose hosted email template or Site URL settings, so those must be configured separately.
+
+## Production cutover gate
+The Vercel application project must keep FIGSUITE_AUTH_REQUIRED=false until Supabase redirects, email template, SMTP and real-email tests pass. Flip to true only after these checks; the setting never grants access to authenticated-only data. The /account page always checks the user's server-verified Supabase identity.
