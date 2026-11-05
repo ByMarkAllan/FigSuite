@@ -30,3 +30,16 @@ User authentication does not establish eligibility for future cash prizes. Ident
 
 ## Deployment
 Use the canonical Vercel project fig-suite for app.figsuite.com, root apps/web, and existing public Supabase settings. The separate figsuite project serves marketing. Do not deploy to retired figsuite-platform.
+
+
+## Acceptance test script (manual email delivery)
+1. Visit / in a fresh private browser. It must redirect to /login.
+2. Request a code using a controlled test email address. Verify delivery from the configured SMTP sender.
+3. Enter the OTP (or use the token-hash magic link). Confirm the workspace becomes accessible.
+4. Go to /account, save a display name, refresh and confirm the value persists.
+5. Sign out, then confirm / and /account are no longer accessible.
+6. Repeat with a second controlled test account to confirm neither account can read or edit the other's profile.
+7. Confirm reused and expired OTPs fail; check rate limits, audit logs, and cookie refresh.
+8. Confirm /market-data stays accessible without a session and /api/prizes/status remains payout-disabled.
+
+Do not complete launch without this check. The connected Supabase management integration does not expose hosted email template or Site URL settings, so those must be configured separately.
