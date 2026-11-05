@@ -1,0 +1,685 @@
+Issue_ID,Gate,Milestone,Title,Priority,Size,Depends_On,Labels,Status,Acceptance_Criteria,Body
+FGS-001,G0,Foundation / Governance,[FGS-001] Confirm product charter and FigSuite v1.1 decision records,P0,3,,"area:g0,priority:p0,implementation",Backlog,"Founder signs Finance-first beta, domain glossary, no paid competitive advantage, and stage approvals","## Scope
+Implement Confirm product charter and FigSuite v1.1 decision records within FigSuite v1.1.
+
+## Acceptance criteria
+- Founder signs Finance-first beta, domain glossary, no paid competitive advantage, and stage approvals
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+None
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-002,G0,Foundation / Governance,[FGS-002] Commission regulatory classification and contest-counsel matrix,P0,5,FGS-001,"area:g0,priority:p0,implementation",Backlog,"Written review maps CFTC, SEC, state gaming, sweepstakes, age, jurisdiction and tax considerations; prize remains disabled","## Scope
+Implement Commission regulatory classification and contest-counsel matrix within FigSuite v1.1.
+
+## Acceptance criteria
+- Written review maps CFTC, SEC, state gaming, sweepstakes, age, jurisdiction and tax considerations; prize remains disabled
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-001
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-003,G0,Foundation / Governance,[FGS-003] Validate payments and payout provider suitability,P0,3,FGS-002,"area:g0,priority:p0,implementation",Backlog,Written SaaS payments scope and separate prize provider requirements documented; Stripe not presumed approved,"## Scope
+Implement Validate payments and payout provider suitability within FigSuite v1.1.
+
+## Acceptance criteria
+- Written SaaS payments scope and separate prize provider requirements documented; Stripe not presumed approved
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-002
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-004,G0,Foundation / Governance,[FGS-004] Verify source licenses and redistribution rights,P0,5,FGS-001,"area:g0,priority:p0,implementation",Backlog,"Named finance data sources have allowed uses, streaming rights, retention rules and cost assumptions documented","## Scope
+Implement Verify source licenses and redistribution rights within FigSuite v1.1.
+
+## Acceptance criteria
+- Named finance data sources have allowed uses, streaming rights, retention rules and cost assumptions documented
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-001
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-005,G0,Foundation / Governance,[FGS-005] Approve skill-score and reputation specification,P0,5,FGS-001,"area:g0,priority:p0,implementation",Backlog,"Brier baseline methodology, event cap, uncertainty and qualified-rank policies published with test vectors","## Scope
+Implement Approve skill-score and reputation specification within FigSuite v1.1.
+
+## Acceptance criteria
+- Brier baseline methodology, event cap, uncertainty and qualified-rank policies published with test vectors
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-001
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-006,G0,Foundation / Governance,[FGS-006] Approve event-resolution rulebook and dispute standards,P0,5,FGS-001,"area:g0,priority:p0,implementation",Backlog,"Tie, void, data correction, downtime, source dispute, timezone and appeals rules have examples and operator signoff","## Scope
+Implement Approve event-resolution rulebook and dispute standards within FigSuite v1.1.
+
+## Acceptance criteria
+- Tie, void, data correction, downtime, source dispute, timezone and appeals rules have examples and operator signoff
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-001
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-007,G0,Foundation / Governance,[FGS-007] Define hard-disabled prize safety contract,P0,3,"FGS-002, FGS-003","area:g0,priority:p0,implementation",Backlog,"Default DENY, no payment-to-prize link, no production credentials, approval evidence and fail-closed tests documented","## Scope
+Implement Define hard-disabled prize safety contract within FigSuite v1.1.
+
+## Acceptance criteria
+- Default DENY, no payment-to-prize link, no production credentials, approval evidence and fail-closed tests documented
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-002, FGS-003
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-008,G1,Core Platform,[FGS-008] Bootstrap typed pnpm monorepo and repo policy,P0,3,FGS-001,"area:g1,priority:p0,implementation",Backlog,Apps packages workers and docs build; branch protection and CODEOWNERS recommended,"## Scope
+Implement Bootstrap typed pnpm monorepo and repo policy within FigSuite v1.1.
+
+## Acceptance criteria
+- Apps packages workers and docs build; branch protection and CODEOWNERS recommended
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-001
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-009,G1,Core Platform,[FGS-009] Configure CI quality and security checks,P0,5,FGS-008,"area:g1,priority:p0,implementation",Backlog,Lint typecheck tests dependency scan secret scan run on PR and block merge on failure,"## Scope
+Implement Configure CI quality and security checks within FigSuite v1.1.
+
+## Acceptance criteria
+- Lint typecheck tests dependency scan secret scan run on PR and block merge on failure
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-008
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-010,G1,Core Platform,[FGS-010] Provision isolated local preview staging production environments,P0,5,FGS-008,"area:g1,priority:p0,implementation",Backlog,Separate databases secrets deployments and sanitized preview data; prod migration approval controls,"## Scope
+Implement Provision isolated local preview staging production environments within FigSuite v1.1.
+
+## Acceptance criteria
+- Separate databases secrets deployments and sanitized preview data; prod migration approval controls
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-008
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-011,G1,Core Platform,[FGS-011] Implement Supabase authentication and verified profiles,P0,5,FGS-010,"area:g1,priority:p0,implementation",Backlog,Email verification auth refresh logout age attestation and disabled account tests pass,"## Scope
+Implement Implement Supabase authentication and verified profiles within FigSuite v1.1.
+
+## Acceptance criteria
+- Email verification auth refresh logout age attestation and disabled account tests pass
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-010
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-012,G1,Core Platform,[FGS-012] Implement RBAC RLS policies and permission test suite,P0,8,FGS-011,"area:g1,priority:p0,implementation",Backlog,Anonymous and cross-user mutation denied; elevated roles require MFA; table grants audited,"## Scope
+Implement Implement RBAC RLS policies and permission test suite within FigSuite v1.1.
+
+## Acceptance criteria
+- Anonymous and cross-user mutation denied; elevated roles require MFA; table grants audited
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-011
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-013,G1,Core Platform,[FGS-013] Create audit event model and append-only operator log,P0,5,"FGS-010, FGS-012","area:g1,priority:p0,implementation",Backlog,Every rule version admin decision and sensitive state change stores actor hashes and trace IDs,"## Scope
+Implement Create audit event model and append-only operator log within FigSuite v1.1.
+
+## Acceptance criteria
+- Every rule version admin decision and sensitive state change stores actor hashes and trace IDs
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-010, FGS-012
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-014,G1,Core Platform,[FGS-014] Build FigSuite design tokens and terminal shell,P1,5,FGS-008,"area:g1,priority:p1,implementation",Backlog,Accessible responsive shell with dark/light themes and core Combines Portfolio Rankings navigation,"## Scope
+Implement Build FigSuite design tokens and terminal shell within FigSuite v1.1.
+
+## Acceptance criteria
+- Accessible responsive shell with dark/light themes and core Combines Portfolio Rankings navigation
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-008
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-015,G1,Core Platform,[FGS-015] Threat-model simulation feed identity and prize boundaries,P0,5,"FGS-007, FGS-012","area:g1,priority:p0,implementation",Backlog,Threat register includes sybil feed tampering stale quote privilege escalation and prize pivot test plan,"## Scope
+Implement Threat-model simulation feed identity and prize boundaries within FigSuite v1.1.
+
+## Acceptance criteria
+- Threat register includes sybil feed tampering stale quote privilege escalation and prize pivot test plan
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-007, FGS-012
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-016,G1,Core Platform,[FGS-016] Implement observability and incident telemetry baseline,P0,5,"FGS-009, FGS-010","area:g1,priority:p0,implementation",Backlog,Trace IDs structured logs audit dashboards alerts and redaction verified in staging,"## Scope
+Implement Implement observability and incident telemetry baseline within FigSuite v1.1.
+
+## Acceptance criteria
+- Trace IDs structured logs audit dashboards alerts and redaction verified in staging
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-009, FGS-010
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-017,G2,Simulation Engine,[FGS-017] Migrate event catalog options and immutable event versions,P0,8,"FGS-012, FGS-006","area:g2,priority:p0,implementation",Backlog,Schema constraints and immutable publication versions tested; invalid event cannot open,"## Scope
+Implement Migrate event catalog options and immutable event versions within FigSuite v1.1.
+
+## Acceptance criteria
+- Schema constraints and immutable publication versions tested; invalid event cannot open
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-012, FGS-006
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-018,G2,Simulation Engine,[FGS-018] Build finance observation ingest and source provenance,P0,8,"FGS-004, FGS-017","area:g2,priority:p0,implementation",Backlog,Licensed feed adapter saves timestamps hashes gap markers and retry deduplication,"## Scope
+Implement Build finance observation ingest and source provenance within FigSuite v1.1.
+
+## Acceptance criteria
+- Licensed feed adapter saves timestamps hashes gap markers and retry deduplication
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-004, FGS-017
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-019,G2,Simulation Engine,[FGS-019] Implement exchange calendars and scheduled event transitions,P0,5,FGS-017,"area:g2,priority:p0,implementation",Backlog,New York DST holidays half days and missed-trigger recovery pass deterministic tests,"## Scope
+Implement Implement exchange calendars and scheduled event transitions within FigSuite v1.1.
+
+## Acceptance criteria
+- New York DST holidays half days and missed-trigger recovery pass deterministic tests
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-017
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-020,G2,Simulation Engine,[FGS-020] Implement official forecast commit and revision workflow,P0,8,"FGS-017, FGS-012","area:g2,priority:p0,implementation",Backlog,One current forecast per user/event; exact lock rejects and revisions audit; probabilities sum to one,"## Scope
+Implement Implement official forecast commit and revision workflow within FigSuite v1.1.
+
+## Acceptance criteria
+- One current forecast per user/event; exact lock rejects and revisions audit; probabilities sum to one
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-017, FGS-012
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-021,G2,Simulation Engine,[FGS-021] Implement stable LMSR market math and quote vectors,P0,8,"FGS-017, FGS-005","area:g2,priority:p0,implementation",Backlog,K-outcome price sums to one; delta-cost and monotonicity property tests; stable overflow handling,"## Scope
+Implement Implement stable LMSR market math and quote vectors within FigSuite v1.1.
+
+## Acceptance criteria
+- K-outcome price sums to one; delta-cost and monotonicity property tests; stable overflow handling
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-017, FGS-005
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-022,G2,Simulation Engine,[FGS-022] Implement atomic simulated wallet and allocation ledger,P0,8,"FGS-021, FGS-012","area:g2,priority:p0,implementation",Backlog,Postgres row locks no overspend unique idempotency receipts and state-version advancement,"## Scope
+Implement Implement atomic simulated wallet and allocation ledger within FigSuite v1.1.
+
+## Acceptance criteria
+- Postgres row locks no overspend unique idempotency receipts and state-version advancement
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-021, FGS-012
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-023,G2,Simulation Engine,[FGS-023] Build transactional outbox and internal streaming gateway,P1,8,"FGS-022, FGS-016","area:g2,priority:p1,implementation",Backlog,Outbox at least-once delivery with subscriber dedupe and last-version resync,"## Scope
+Implement Build transactional outbox and internal streaming gateway within FigSuite v1.1.
+
+## Acceptance criteria
+- Outbox at least-once delivery with subscriber dedupe and last-version resync
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-022, FGS-016
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-024,G2,Simulation Engine,[FGS-024] Implement event lifecycle state machine and lock worker,P0,5,"FGS-017, FGS-019, FGS-013","area:g2,priority:p0,implementation",Backlog,Illegal transitions rejected; scheduler restarts do not skip lock; audited state record,"## Scope
+Implement Implement event lifecycle state machine and lock worker within FigSuite v1.1.
+
+## Acceptance criteria
+- Illegal transitions rejected; scheduler restarts do not skip lock; audited state record
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-017, FGS-019, FGS-013
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-025,G2,Simulation Engine,[FGS-025] Implement source-backed provisional resolution and correction,P0,8,"FGS-018, FGS-024, FGS-006","area:g2,priority:p0,implementation",Backlog,Source evidence persisted; dispute state blocks finalization; corrections create new version,"## Scope
+Implement Implement source-backed provisional resolution and correction within FigSuite v1.1.
+
+## Acceptance criteria
+- Source evidence persisted; dispute state blocks finalization; corrections create new version
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-018, FGS-024, FGS-006
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-026,G2,Simulation Engine,[FGS-026] Implement Brier scoring Bips ledger and rolling skill rating,P0,8,"FGS-020, FGS-025, FGS-005","area:g2,priority:p0,implementation",Backlog,Replays deterministic; no duplicated Bips; baseline version recorded; confidence qualification,"## Scope
+Implement Implement Brier scoring Bips ledger and rolling skill rating within FigSuite v1.1.
+
+## Acceptance criteria
+- Replays deterministic; no duplicated Bips; baseline version recorded; confidence qualification
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-020, FGS-025, FGS-005
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-027,G2,Simulation Engine,[FGS-027] Add end-to-end idempotency and transaction replay protection,P0,5,"FGS-022, FGS-025, FGS-026","area:g2,priority:p0,implementation",Backlog,Concurrent requests and retries produce exactly one accepted effect per logical operation,"## Scope
+Implement Add end-to-end idempotency and transaction replay protection within FigSuite v1.1.
+
+## Acceptance criteria
+- Concurrent requests and retries produce exactly one accepted effect per logical operation
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-022, FGS-025, FGS-026
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-028,G2,Simulation Engine,[FGS-028] Execute math security and concurrency engine verification gate,P0,8,"FGS-021, FGS-022, FGS-025, FGS-026, FGS-027","area:g2,priority:p0,implementation",Backlog,Signed G2 report covers property fuzz RLS load negative cases and prize zero-egress assertions,"## Scope
+Implement Execute math security and concurrency engine verification gate within FigSuite v1.1.
+
+## Acceptance criteria
+- Signed G2 report covers property fuzz RLS load negative cases and prize zero-egress assertions
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-021, FGS-022, FGS-025, FGS-026, FGS-027
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-029,G3,Finance Private Beta,[FGS-029] Build event discovery and filtering UX,P0,5,"FGS-014, FGS-017","area:g3,priority:p0,implementation",Backlog,Filters event types status close time with clear feed staleness and accessible cards,"## Scope
+Implement Build event discovery and filtering UX within FigSuite v1.1.
+
+## Acceptance criteria
+- Filters event types status close time with clear feed staleness and accessible cards
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-014, FGS-017
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-030,G3,Finance Private Beta,[FGS-030] Build event detail resolution evidence and quote UI,P0,8,"FGS-029, FGS-023","area:g3,priority:p0,implementation",Backlog,Source provenance locking timer simulator quote labels and latest receipt accurately displayed,"## Scope
+Implement Build event detail resolution evidence and quote UI within FigSuite v1.1.
+
+## Acceptance criteria
+- Source provenance locking timer simulator quote labels and latest receipt accurately displayed
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-029, FGS-023
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-031,G3,Finance Private Beta,[FGS-031] Build official probability forecast composer,P0,8,"FGS-020, FGS-030","area:g3,priority:p0,implementation",Backlog,Probability simplex control confirms saved values server time and lock; editable only before lock,"## Scope
+Implement Build official probability forecast composer within FigSuite v1.1.
+
+## Acceptance criteria
+- Probability simplex control confirms saved values server time and lock; editable only before lock
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-020, FGS-030
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-032,G3,Finance Private Beta,[FGS-032] Build simulation order preview and allocation flow,P0,8,"FGS-022, FGS-030","area:g3,priority:p0,implementation",Backlog,Preview nonbinding; allocation receipt matches authoritative state; overspend rejection explained,"## Scope
+Implement Build simulation order preview and allocation flow within FigSuite v1.1.
+
+## Acceptance criteria
+- Preview nonbinding; allocation receipt matches authoritative state; overspend rejection explained
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-022, FGS-030
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-033,G3,Finance Private Beta,[FGS-033] Build analyst portfolio and calibration dashboard,P0,8,"FGS-026, FGS-014","area:g3,priority:p0,implementation",Backlog,Per-event history Brier scores baselines Bips adjustments and rolling rating visible,"## Scope
+Implement Build analyst portfolio and calibration dashboard within FigSuite v1.1.
+
+## Acceptance criteria
+- Per-event history Brier scores baselines Bips adjustments and rolling rating visible
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-026, FGS-014
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-034,G3,Finance Private Beta,[FGS-034] Build qualified analyst and Bips leaderboards,P0,5,"FGS-026, FGS-033","area:g3,priority:p0,implementation",Backlog,Min event count provisional markers confidence and anti-volume sorting verified,"## Scope
+Implement Build qualified analyst and Bips leaderboards within FigSuite v1.1.
+
+## Acceptance criteria
+- Min event count provisional markers confidence and anti-volume sorting verified
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-026, FGS-033
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-035,G3,Finance Private Beta,[FGS-035] Build restricted market operator and resolution console,P0,8,"FGS-024, FGS-025, FGS-013","area:g3,priority:p0,implementation",Backlog,Role isolation four-eyes overrides immutable audit and event-source evidence UAT,"## Scope
+Implement Build restricted market operator and resolution console within FigSuite v1.1.
+
+## Acceptance criteria
+- Role isolation four-eyes overrides immutable audit and event-source evidence UAT
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-024, FGS-025, FGS-013
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
+FGS-036,G3,Finance Private Beta,[FGS-036] Run Finance private beta and readiness review,P0,8,"FGS-028, FGS-029, FGS-030, FGS-031, FGS-032, FGS-033, FGS-034, FGS-035","area:g3,priority:p0,implementation",Backlog,G3 signoff includes licensed data staging checks tester feedback and no prize routing,"## Scope
+Implement Run Finance private beta and readiness review within FigSuite v1.1.
+
+## Acceptance criteria
+- G3 signoff includes licensed data staging checks tester feedback and no prize routing
+- Add or update focused automated tests and/or a reproducible manual verification record.
+- Document any resulting ADR, migration, permission or runbook change.
+
+## Dependencies
+FGS-028, FGS-029, FGS-030, FGS-031, FGS-032, FGS-033, FGS-034, FGS-035
+
+## References
+- `docs/01-PRD-v1.1.md`
+- `docs/02-TECHNICAL-ARCHITECTURE-v1.1.md`
+
+## Governance
+- State: Backlog; no issue creation/implementation/verification authorization is implied by this file.
+- Review with product owner before creating or modifying GitHub Issues; separate implementation and verification approvals.
+"
