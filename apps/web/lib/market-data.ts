@@ -51,7 +51,7 @@ export async function loadStockBars(input: string, timeframe: 'day'|'minute'='mi
   if(!response.ok)throw new Error('DATA_PROVIDER_UNAVAILABLE');
   const data:unknown=await response.json();
   if(!data||typeof data!=='object'||!('results' in data)||!Array.isArray(data.results))throw new Error('DATA_PROVIDER_RESPONSE_INVALID');
-  const bars:Bar[]=data.results.filter((v:unknown)=>v&&typeof v==='object'&&
+  const bars:Bar[]=data.results.filter((v:unknown): v is Record<string,number>=>Boolean(v)&&typeof v==='object'&&
       ['t','o','h','l','c','v'].every(x=>typeof (v as Record<string,unknown>)[x]==='number'))
     .map((v:Record<string,number>)=>({timestamp:new Date(v.t).toISOString(),open:v.o,high:v.h,low:v.l,close:v.c,volume:v.v}))
     .filter((v:Bar)=>Number.isFinite(v.close)&&v.close>0)
