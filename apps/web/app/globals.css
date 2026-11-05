@@ -43,3 +43,12 @@
 .account-info{font-size:12px;line-height:1.65;color:#92a6bd;padding:20px 0;margin-top:26px;border-top:1px solid #2c3950}
 .account-signout{background:#2a1c2a;border:1px solid #6b3c4b;border-radius:8px;color:#ffd9e3;padding:11px 16px;font-weight:700;min-height:44px}
 @media(max-width:520px){.auth-card{padding:30px 22px}.auth-eyebrow{margin-top:35px}}
+
+
+/* Public exploration; verified identity gate for mutating simulation actions. */
+.auth-gate-modal{max-width:475px}
+.auth-gate-note{font-size:12px;line-height:1.7;color:#a1b3c7;background:#102233;border:1px solid #30455a;border-radius:9px;padding:12px;margin:14px 0}
+.auth-gate-link{display:flex;align-items:center;justify-content:space-between;background:#39d5af;color:#092024;font-weight:750;border-radius:10px;padding:13px 16px;margin:18px 0 10px;min-height:46px}
+.auth-gate-link:hover{background:#8af1d5}
+.auth-gate-dismiss{display:block;width:100%;border:1px solid #41536b;border-radius:9px;background:transparent;color:#cedbed;padding:11px;margin-top:8px}
+.auth-gate-dismiss:hover{background:#1a2a3e}
