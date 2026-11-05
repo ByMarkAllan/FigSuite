@@ -3,14 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "npm@10.9.2",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "npm run dev --workspace @figsuite/web",
     "build": "npm run build --workspace @figsuite/web",
     "start": "npm run start --workspace @figsuite/web",
     "typecheck": "npm run typecheck --workspace @figsuite/web",
-    "test": "node --test packages/simulation/test/*.test.mjs packages/prize-control/test/*.test.mjs",
+    "test": "node --test packages/simulation/test/*.test.mjs packages/prize-control/test/*.test.mjs tests/auth-access.test.mjs",
     "check": "npm run test && npm run typecheck"
   },
-  "engines": { "node": ">=20.9" }
+  "engines": {
+    "node": ">=20.9"
+  }
 }
