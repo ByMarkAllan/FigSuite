@@ -1,0 +1,9 @@
+{
+  "name": "@figsuite/prize-control",
+  "version": "0.0.0-disabled",
+  "private": true,
+  "type": "module",
+  "description": "Isolated default-deny prize boundary; no payout provider integration",
+  "exports": {".": {"types": "./src/index.d.ts", "default": "./src/index.mjs"}},
+  "scripts": {"test": "node --test test/*.test.mjs"}
+}
