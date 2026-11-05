@@ -117,7 +117,28 @@ def apply(data):
             set_field(pid,iid,fields[key],option)
         print("ADDED",code,row["Gate"],row["Priority"])
     print("PROJECT READY:",url or "https://github.com/users/ByMarkAllan/projects/"+n)
-    print("Default table view and custom fields ready. Create additional board/roadmap views in GitHub UI if needed.")
+    ensure_views(n,pid)
+    print("Project fields and items ready; review view filters/columns in GitHub UI.")
+
+def ensure_views(number, pid):
+    """Create board/roadmap/verification views if the GraphQL schema supports them."""
+    names=[("MVP Board","BOARD_LAYOUT"),("Roadmap","ROADMAP_LAYOUT"),
+           ("Current Sprint","TABLE_LAYOUT"),("Verification Queue","TABLE_LAYOUT"),
+           ("Blocked & Risks","TABLE_LAYOUT")]
+    query="query($login:String!,$number:Int!){user(login:$login){projectV2(number:$number){views(first:100){nodes{name}}}}}"
+    mutation="mutation($projectId:ID!,$name:String!,$layout:ProjectV2ViewLayout!){createProjectV2View(input:{projectId:$projectId,name:$name,layout:$layout}){projectV2View{id name}}}"
+    try:
+        result=gh("api","graphql","-f","query="+query,"-f","login="+OWNER,
+                  "-F","number="+str(number),json_out=True)
+        existing={v["name"] for v in result["data"]["user"]["projectV2"]["views"]["nodes"]}
+        for name,layout in names:
+            if name in existing: continue
+            r=gh("api","graphql","-f","query="+mutation,"-f","projectId="+pid,
+                 "-f","name="+name,"-f","layout="+layout,json_out=True)
+            if r.get("errors"): raise RuntimeError(str(r["errors"])[:220])
+            print("VIEW CREATED",name)
+    except (RuntimeError,KeyError,TypeError,ValueError) as exc:
+        print("VIEW SETUP WARNING: leave default table view; customize Board/Roadmap in GitHub UI:",str(exc)[:250])
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
