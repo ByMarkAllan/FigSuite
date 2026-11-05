@@ -24,6 +24,8 @@ jobs:
         run: npm ci --no-audit --no-fund
       - name: Verify app and prize boundary
         run: npm test && npm run typecheck && npm run build
+      - name: Validate Project v2 importer in dry run
+        run: python3 -m py_compile scripts/sync_mvp_project.py && python3 scripts/sync_mvp_project.py
       - name: Verify marketing assets
         run: test -s apps/marketing/public/index.html && test -s apps/marketing/public/styles.css
       - name: Verify payout feature remains hard disabled
