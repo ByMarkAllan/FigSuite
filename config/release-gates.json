@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "description": "FigSuite evidence-based launch gates. A passing checklist does not deploy, enable finance transactions, or authorize payouts.",
+  "gates": {
+    "finance_mvp": {
+      "name": "Finance MVP — Production-ready",
+      "scope": "Simulation-only, Finance-first; prize service disabled",
+      "mustBeBefore": [],
+      "requiredApprovals": [
+        "product_owner",
+        "security_reviewer"
+      ],
+      "checks": [
+        {
+          "id": "FIN-01",
+          "title": "Approve Finance-first MVP scope, official rules and no-cash boundaries",
+          "owner": "product"
+        },
+        {
+          "id": "FIN-02",
+          "title": "Anonymous browse and server-verified sign-in for every user mutation",
+          "owner": "engineering"
+        },
+        {
+          "id": "FIN-03",
+          "title": "Production email OTP/link, redirect allowlist, SMTP, abuse rate limits and session UAT",
+          "owner": "identity"
+        },
+        {
+          "id": "FIN-04",
+          "title": "Own-record RLS, cross-account isolation, age/disabled-account enforcement, RBAC and operator MFA",
+          "owner": "security"
+        },
+        {
+          "id": "FIN-05",
+          "title": "Isolated preview/staging/production databases, credentials, migrations and rollback",
+          "owner": "platform"
+        },
+        {
+          "id": "FIN-06",
+          "title": "Durable event catalog and forecast revisions, allocation ledger, idempotent transactions",
+          "owner": "engineering"
+        },
+        {
+          "id": "FIN-07",
+          "title": "Independent event resolution, scoring provenance and qualified rankings, with correction flow",
+          "owner": "product"
+        },
+        {
+          "id": "FIN-08",
+          "title": "Licensed Massive feeds, correct stale/delayed labels, market calendars and redistribution rights",
+          "owner": "data"
+        },
+        {
+          "id": "FIN-09",
+          "title": "Security review, secrets and dependency scanning, rate limits, audit and threat-model tests",
+          "owner": "security"
+        },
+        {
+          "id": "FIN-10",
+          "title": "Monitoring, alerts, backups, restore, incident response, load and recovery drills",
+          "owner": "platform"
+        },
+        {
+          "id": "FIN-11",
+          "title": "Privacy, account deletion, accessibility, support, legal disclosure and production UX",
+          "owner": "product"
+        },
+        {
+          "id": "FIN-12",
+          "title": "Closed beta UAT, analytic accuracy, performance targets and launch rollback exercise",
+          "owner": "quality"
+        },
+        {
+          "id": "FIN-13",
+          "title": "Negative prize-egress verification: no cash prizes, transfers, deposits or payout endpoints",
+          "owner": "security"
+        }
+      ]
+    },
+    "cash_prizes": {
+      "name": "Cash-prize program — Independent release",
+      "scope": "Separate from Finance MVP; no release without independent approval",
+      "mustBeBefore": [
+        "finance_mvp"
+      ],
+      "requiredApprovals": [
+        "product_owner",
+        "legal_reviewer",
+        "finance_reviewer",
+        "security_reviewer"
+      ],
+      "checks": [
+        {
+          "id": "CASH-01",
+          "title": "Finance MVP gate passed and signed off independently",
+          "owner": "product"
+        },
+        {
+          "id": "CASH-02",
+          "title": "Event/state legal classifications, official rules, tax and jurisdiction review documented",
+          "owner": "legal"
+        },
+        {
+          "id": "CASH-03",
+          "title": "Tremendous explicit program approval, production funding source and payout entitlement",
+          "owner": "finance"
+        },
+        {
+          "id": "CASH-04",
+          "title": "Validated age, region, identity, tax, KYC, sanctions, and abuse eligibility controls",
+          "owner": "compliance"
+        },
+        {
+          "id": "CASH-05",
+          "title": "Fixed-award eligible entry and winner selection separated from paid simulation activity",
+          "owner": "legal"
+        },
+        {
+          "id": "CASH-06",
+          "title": "Authoritative DB-backed approvals by two independent reviewers, non-self-approval",
+          "owner": "security"
+        },
+        {
+          "id": "CASH-07",
+          "title": "Funding reservation, append-only funds ledger, bounded order cap and unique award IDs",
+          "owner": "finance"
+        },
+        {
+          "id": "CASH-08",
+          "title": "Idempotent provider worker, timeout reconciliation, webhooks, disputes and retries",
+          "owner": "engineering"
+        },
+        {
+          "id": "CASH-09",
+          "title": "Isolated provider secrets, role boundaries, kill switch, rate and amount controls",
+          "owner": "security"
+        },
+        {
+          "id": "CASH-10",
+          "title": "Fraud security review, audit events and monitoring for abuse and suspicious payouts",
+          "owner": "compliance"
+        },
+        {
+          "id": "CASH-11",
+          "title": "End-to-end sandbox and negative tests, funding and finance reconciliation signoff",
+          "owner": "quality"
+        },
+        {
+          "id": "CASH-12",
+          "title": "Final founder authorization, release rollback drill and production-only change review",
+          "owner": "product"
+        }
+      ]
+    }
+  }
+}
