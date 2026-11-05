@@ -1,0 +1,6 @@
+# FigSuite
+
+FigSuite is a forecasting intelligence simulation platform, not a wagering or brokerage service. The private-beta market probabilities are illustrative. No cash prize feature is active.
+
+Marketing: https://figsuite.com/
+Simulation terminal: https://app.figsuite.com/
